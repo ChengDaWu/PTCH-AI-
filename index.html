@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI 人工智慧在屏東基督教醫院的實際應用</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand" href="index.html"><span class="brandmark">✦</span><span>屏東基督教醫院<small>AI APPLICATIONS SHOWCASE</small></span></a>
+    <div class="navlinks">
+      <a href="#architecture">整合架構</a>
+      <a href="#services">AI 應用</a>
+      <button id="openDrawer">AI 應用導覽 ▾</button>
+    </div>
+  </nav>
+</header>
+
+<section id="architecture" class="hero architecture-hero">
+  <div class="hero-inner architecture-layout">
+    <div>
+      <div class="kicker">HIS and AI Integration Architecture</div>
+      <h1>HIS 與 AI 整合架構</h1>
+      <div class="en">以 HIS 為核心，依需求串接本地 AI 與外部 AI 服務</div>
+      <p class="lead">院內既有 HIS 系統可依臨床應用需求，分別串接本地 AI 伺服器或外部 AI 服務，將 AI 能力整合至既有醫療資訊流程。</p>
+      <div class="badges">
+        <span class="badge">HIS System</span>
+        <span class="badge">Local AI Server</span>
+        <span class="badge">Bridge / API</span>
+        <span class="badge">De-identification</span>
+        <span class="badge">OpenAI / Others</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn primary" href="#services">瀏覽 AI 應用項目</a>
+        <a class="btn" href="#architecture-diagram">查看架構圖</a>
+      </div>
+    </div>
+    <div class="hero-card architecture-points">
+      <div class="num">2<span>條主要路徑</span></div>
+      <strong>本地 AI 路徑</strong>
+      <p>HIS 直接與本地 AI 伺服器互動，於院內運算並將 AI 分析結果回傳 HIS。</p>
+      <strong style="display:block;margin-top:16px">外部 AI 路徑</strong>
+      <p>HIS 經由 Bridge / API、去識別化與 Internet，串接 OpenAI 或其他外部 AI 服務，再將結果回傳 HIS。</p>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section section-tight" id="architecture-diagram">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Architecture Overview</div>
+        <h2 class="section-title">整合架構主視覺</h2>
+      </div>
+      <p class="section-desc">整體架構分為本地 AI 與外部 AI 兩條路徑，依不同應用情境選擇適合的運算與模型服務。</p>
+    </div>
+    <div class="arch-main-figure panel">
+      <img src="assets/img/his-ai-architecture-main.png" alt="HIS 與 AI 整合架構圖">
+    </div>
+    <div class="route-grid">
+      <article class="route-card local-route">
+        <div class="route-tag">Local AI Route</div>
+        <h3>本地 AI 路徑</h3>
+        <p>醫療端 PC 進入 HIS 系統後，可直接串接本地 AI 伺服器，完成院內資料處理、模型運行與結果回傳。</p>
+      </article>
+      <article class="route-card external-route">
+        <div class="route-tag">External AI Route</div>
+        <h3>外部 AI 路徑</h3>
+        <p>HIS 系統可另走外部 AI 路徑，依序經過 Bridge / API、去識別化與 Internet，再串接 OpenAI 或其他模型服務。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">AI Service Catalog</div>
+        <h2 class="section-title">十一項 AI 服務項目</h2>
+      </div>
+      <p class="section-desc">目前院方推動之十項 AI 應用服務，涵蓋醫師、藥事、護理、住院照護與民眾服務等情境。</p>
+    </div>
+    <div class="service-grid">
+      <a class="service-card" href="service-01.html"><div class="service-no">AI SERVICE 01</div><h3>AI 診斷碼推薦</h3><div class="sub">AI Diagnosis Recommendation</div><p>依據 SOAP notes 與檢驗資料進行分析，提供 AI 診斷碼建議，供醫師參考與選用。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-02.html"><div class="service-no">AI SERVICE 02</div><h3>AI 推薦用藥</h3><div class="sub">AI Medication Recommendation</div><p>依據醫令中的診斷碼及相關臨床資訊，由 AI 提供用藥建議，作為醫師開立藥物時的參考。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-03.html"><div class="service-no">AI SERVICE 03</div><h3>AI 生成診斷書</h3><div class="sub">AI-Generated Medical Certificates</div><p>依門診、急診與住院病歷，自動產生不同類型的診斷書內容，供醫師確認與調整。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-04.html"><div class="service-no">AI SERVICE 04</div><h3>抗生素升降階 AI 輔助決策</h3><div class="sub">AI-Assisted Decision Support for Antibiotic Escalation / De-escalation</div><p>整合病人基本資料、TPR、Lab Data、Microbiology、AST 等資訊，由 AI 輔助判斷抗生素升階或降階策略。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-05.html"><div class="service-no">AI SERVICE 05</div><h3>AI 輔助第三線抗生素審核程式</h3><div class="sub">AI-Assisted Third-Line Antibiotic Review Program</div><p>分析開單日前三天至開單日的資料，協助第三線抗生素審核；可比較多次分析結果，並修改 Prompt 後重新執行。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-06.html"><div class="service-no">AI SERVICE 06</div><h3>官網 AI 客服機器人</h3><div class="sub">Official Website AI Customer Service Robot</div><p>於官網提供 AI 即時問答服務，協助快速回應民眾查詢。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-07.html"><div class="service-no">AI SERVICE 07</div><h3>AI 優化語音輸入</h3><div class="sub">AI-Optimized Voice Input</div><p>語音轉文字後再經 AI Filter 整理，改善錯字、冗詞與語意不順，提升輸入內容的可讀性。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-08.html"><div class="service-no">AI SERVICE 08</div><h3>門診醫令核藥安全快審</h3><div class="sub">Outpatient Fast Review for Medication Safety</div><p>協助藥師進行門診醫令核藥安全快審，將用藥安全相關資訊集中呈現，作為核藥作業參考。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-09.html"><div class="service-no">AI SERVICE 09</div><h3>AI 護理紀錄</h3><div class="sub">AI Nursing Records</div><p>點擊 AI 護理紀錄後，填入 Prompt 並送出，將護理評估資料處理為正式護理紀錄。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+      <a class="service-card" href="service-10.html"><div class="service-no">AI SERVICE 10</div><h3>住院 Weekly Summary</h3><div class="sub">Inpatient Weekly Summary</div><p>規劃於每週五中午進行背景批次 AI 分析，為住院患者產生 Weekly Summary，由醫師決定是否帶入並確認內容。</p><span class="status planned">規劃中</span><span class="arrow">查看應用 →</span></a>
+
+      <a class="service-card" href="service-11.html"><div class="service-no">AI SERVICE 11</div><h3>ChatPTCH</h3><div class="sub">Generative AI Conversation Platform</div><p>透過對話介面使用生成式 AI，支援文字與語音輸入；示範影片以 medgemma-27b 進行醫療知識問答。</p><span class="status">目前應用</span><span class="arrow">查看應用 →</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">屏東基督教醫院・AI 人工智慧實際應用</footer>
+<div class="lightbox" id="lightbox"><button class="close" aria-label="關閉">×</button><img id="lightboxImg" alt="放大畫面"></div>
+<div class="drawer" id="drawer"><div class="drawer-bg"></div><aside class="drawer-panel"><div class="drawer-header"><div><strong>AI 應用項目</strong><div style="color:#78909b;font-size:12px">AI Services</div></div><button id="closeDrawer" style="border:0;background:#edf4f7;border-radius:50%;width:38px;height:38px;cursor:pointer">×</button></div><div class="drawer-list"><a class="drawer-item drawer-home" href="index.html">← 回到首頁</a><a class="drawer-item" href="service-01.html"><b>01</b>　AI 診斷碼推薦</a><a class="drawer-item" href="service-02.html"><b>02</b>　AI 推薦用藥</a><a class="drawer-item" href="service-03.html"><b>03</b>　AI 生成診斷書</a><a class="drawer-item" href="service-04.html"><b>04</b>　抗生素升降階 AI 輔助決策</a><a class="drawer-item" href="service-05.html"><b>05</b>　AI 輔助第三線抗生素審核程式</a><a class="drawer-item" href="service-06.html"><b>06</b>　官網 AI 客服機器人</a><a class="drawer-item" href="service-07.html"><b>07</b>　AI 優化語音輸入</a><a class="drawer-item" href="service-08.html"><b>08</b>　門診醫令核藥安全快審</a><a class="drawer-item" href="service-09.html"><b>09</b>　AI 護理紀錄</a><a class="drawer-item" href="service-10.html"><b>10</b>　住院 Weekly Summary</a><a class="drawer-item" href="service-11.html"><b>11</b>　ChatPTCH</a></div></aside></div>
+<script src="assets/site.js"></script>
+</body>
+</html>
