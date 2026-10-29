@@ -107,8 +107,8 @@ Used the following prompt for steps 1–4, substituting the step number and its 
 
 ## Checklist
 - [x] Review pending changes and rerun structural validation plus `git diff --check`.
-- [ ] Refresh remote state and create a focused commit (in progress).
-- [ ] Push main and verify remote commit.
+- [x] Refresh remote state and create a focused commit.
+- [x] Push main and verify remote commit.
 
 ## Risk & rollback
 - GitHub Pages may deploy main automatically. Rollback with a new revert commit if needed; preserve shared history.
@@ -117,3 +117,6 @@ Used the following prompt for steps 1–4, substituting the step number and its 
 ## Results
 - Pre-push structural validation passed: ordering, navigation, counters, local links/assets, video/gallery order and redacted image references.
 - Remote refreshed successfully; local `main` contains two existing unpushed commits (`c485604`, `346acb5`) for CSS caching/video ratio and has no remote-only commits. These will be pushed together with the new commit.
+- Website commit: `baca438f5cd5279eee337b4d2ce3b667da6e33df` (`feat: 新增 Accept Note AI 應用與去識別操作截圖`).
+- `git push origin main` succeeded (`105cbba..baca438 main -> main`). `git ls-remote origin refs/heads/main` returned the same full commit hash; working tree was clean and local/remote main synchronized.
+- This completion record is committed separately. GitHub Pages deployment status is outside the requested push verification; no claim is made that the live Pages build has completed.
